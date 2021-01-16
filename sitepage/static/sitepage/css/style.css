@@ -1,0 +1,93 @@
+::-moz-selection { 
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+::selection {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+body {
+    background-color: #e5ebee;
+}
+
+div {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.body {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    box-shadow: 5px 5px 10px #CCCCCC;
+}
+
+h1, h2 {
+    font-family: cursive;
+    font-size: 200%;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, li, dl {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    transition: color 300ms, border-bottom 300ms;
+    color: #00AAFF;
+}
+
+a:hover {
+    color: #44CCFF;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.menu li {
+    font-family: cursive;
+    display: inline;
+    margin: 0 -4px;
+    font-size: 1.3em;
+}
+
+.menu a {
+    color: #787878;
+    padding: 0 8px;
+}
+
+.menu a.selected, .menu a:hover {
+    color: #000000;
+
+}
+
+dl img {
+    margin-bottom: -0.4em;
+    margin-right: 0.6em;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+.footer{
+  text-align: center;
+  padding: 2rem 0;
+}

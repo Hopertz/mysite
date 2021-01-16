@@ -1,0 +1,59 @@
+body { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 18px;
+    background-color: #e5ebee;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #999; 
+    margin-bottom: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+       }
+
+
+header h1 a { 
+    color: green;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.center h1 {
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.nav-left { 
+    margin-right: auto;
+
+}
+.nav-right { 
+    display: flex; padding-top: 2rem; 
+}
+
+
+
+.post-entry h2 a, 
+.post-entry h2 a:visited { 
+    color: blue;
+    text-decoration: none; 
+}
+
+.post-entry h2 a:hover { 
+    color: green;
+}
+
+.pagination {
+   text-align: center;
+}

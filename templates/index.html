@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Hopertz's Site</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'sitepage/css/style.css' %}">
+    <meta name="description" content="Official Hopertz's website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="{% url 'index' %}" class="selected">Home</a></li>
+            <li><a href="{% url 'home' %}">Blog</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <h1>Hopertz's Site</h1>
+        <p> Welcome to my personal website! It took me about 3 days just to make and deploy this site.
+            Procrastination is my whole life in one definition.
+            I can make a better website but i have just decided to make it look simple.I like it. ¯\_༼ •́ ͜ʖ •̀ ༽_/¯</p>
+
+        <h2 id="about">About me</h2>
+        <p>Tanzania male
+        <span id="age"><noscript>born in 1998</noscript></span>.
+        I have been programming
+        <span id="programming"><noscript>since 2018</noscript></span>
+        and i think it's my passion (maybe), not totally sure.</p>
+
+        <p>I enjoy having rest (kupoa), playing video-games,
+        fantasizing, eating or do things that i can't do.</p>
+
+        <p> I can talk perfect, read and write both English and swahili.Currently learning russian language.
+            I have programmed in Python,JavaScript and designed pages like this with plain HTML
+            and CSS.Just imagine i have used Django framework as backend for this site,which is probably an overkill.</p>
+
+        <p> On the Internet, I'm often known as <strong>Hopertz</strong>, although
+            my real name is Lugano Abel.</p>
+
+        <h2 id="projects">Project highlights</h2>
+        <dl>
+             <dt><img src="static/sitepage/images/telegram.svg" alt="" /> <a href="https://t.me/EastTzBot">Group Management Bot</a>:</dt>
+             <dd>Telegram Bot used in <a href="https://t.me/python_eafrica">Python East Africa Group</a></dd>
+        </dl>
+           <p>I made few projects, the above is what i am proud of. Anyways,feel free to check my
+               <a href="https://github.com/Hopertz/">GitHub</a>.
+
+           <dl>
+            <dt><img src="static/sitepage/images/bitcoin.svg" alt="donate"/><a href="{% url "donate" %}">Donate</a></dt>
+            <dd>Some people like what I do and want to encourage me on what i do 😎, but I'm fine with compliments if you can't afford a donation!</dd>
+           </dl>
+        <h2 id="contact">Contact</h2>
+        <p>If you use Telegram you can dm me
+        <a href="https://t.me/Hopertz">@Hopertz</a>
+        and just chat about any topics you like politely.</p>
+
+        <p>If you prefer, you can also send me a private email to
+        <a href="mailto:thesearchtz@gmail.com">thesearchtz@gmail@com</a>
+        and I will try to reply as soon as I can.</p>
+    </div>
+    <footer class="footer"><p>Special thanks to Lonami's site</p>
+        <p>&#169; 2020 copyright all rights reserved</p>
+        </footer>
+
+<script type="text/javascript">
+    now = (new Date()).getFullYear();
+
+    document.getElementById("age").innerHTML =
+        "aged " + (now - 1998);
+
+    document.getElementById("programming").innerHTML =
+        "for " + (now - 2018) + " years";
+</script>
+</body>
+</html>

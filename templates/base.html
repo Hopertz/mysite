@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html> 
+    <head> 
+        
+        <title>Hopertz's blog</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/base.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    </head> 
+    <body>
+    {% if user.is_authenticated  and user.is_staff %}
+
+           <h3>Hi {{ user.username }}!, <a href="{% url 'logout' %}" style="text-decoration:none" >Log out</a>  <a href="{% url 'post_new' %}" style="text-decoration:none" >New Blog Post</a></h3>
+           <h3></h3>
+
+    {% endif %}
+        <header>
+                <div class="center" style ="place-content: center">
+                    <h1>
+                        <a href="{% url 'home' %}" >Hopertz's blog</a>
+                    </h1>
+                </div>
+        </header>
+        <div class="blog-page">
+            {% block content %} 
+            {% endblock content %} 
+
+        </div>
+     
+    </body> 
+</html>
